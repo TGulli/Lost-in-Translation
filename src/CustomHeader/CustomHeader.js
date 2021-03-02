@@ -1,11 +1,15 @@
-import {AppRoutes} from "../consts/AppRoutes";
-import {useHistory} from "react-router";
+import {useHistory} from "react-router"
+import {AppRoutes} from "../consts/AppRoutes"
 
-
+/*
+ * CustomHeader is the header for profile and translation page. This header includes a logo, site name, name of the user,
+ * and a user icon to click for returning to the user profile page.
+ * */
 function CustomHeader() {
     const history = useHistory()
     const name = localStorage.getItem('name')
 
+    // Goes to profile page
     const toProfile = () => {
         history.push(AppRoutes.Profile)
     }
@@ -23,7 +27,7 @@ function CustomHeader() {
                 </span>
             </h3>
         </div>
-    );
+    )
 }
 
-export default CustomHeader;
+export default CustomHeader

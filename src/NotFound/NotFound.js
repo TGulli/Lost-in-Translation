@@ -1,4 +1,6 @@
 
+/*
+* This component will be shown if the user has typed in an incorrect path name. This site has a message about that.*/
 function NotFound() {
     return (
         <div>
@@ -13,8 +15,7 @@ function NotFound() {
             </div>
         <h2 style={{textAlign: "center"}}>Not valid path.</h2>
         </div>
-);
-}
+)}
 
-export default NotFound;
+export default NotFound
 

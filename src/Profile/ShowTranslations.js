@@ -1,19 +1,18 @@
-import ResetLog from "./ResetLog";
+import ResetProfile from "./ResetProfile"
 
+/*
+ * Displays the 10 last translations in a list. The 10 last translations it gets from localstorage, where
+ * the last translations is stored. */
 function ShowTranslations() {
-    const stringArr = JSON.parse(localStorage.getItem('stringArr'))
+    const translateArr = JSON.parse(localStorage.getItem('translateArr'))
 
     const getList = () => {
-        let arr = []
-        if (stringArr === null || stringArr === undefined){
-            return arr
+        if (translateArr === null || translateArr === undefined){
+            return []
         }
-        for (let i = 0; i < stringArr.length; i++) {
-            arr.push(<tr key={i}>
-                <td>{stringArr[i]}</td>
-            </tr>)
-        }
-        return arr
+        return translateArr.map((value, i) => <tr key={i}>
+            <td>{translateArr[i]}</td>
+        </tr>)
     }
 
     return (
@@ -26,9 +25,9 @@ function ShowTranslations() {
                     {getList()}
                 </tbody>
             </table>
-            <ResetLog/>
+            <ResetProfile/>
         </div>
-    );
+    )
 }
 
-export default ShowTranslations;
+export default ShowTranslations

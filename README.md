@@ -1,29 +1,21 @@
 # Lost in translation
-## Available Scripts
 
-In the project directory, you can run:
+Lost in Translation is a simple site for translating strings to sign. The project is made with React.
+First the user must log in with a name, and then the user can translate words on the next page ('/translation'').
+The translation page shows the string with signs, when the user submits with the button.
+The last page is a profile page, which shows the 10 latest translations that the user has made. The profile page also has a logout button, which clear all the saved data, and returns to the home page.
 
-### `npm start`
+## Technologies
+- React
+- Javascript
+- HTML
+- CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## File description
+The js files is stored in folders, where one folder represents one page. For example all the js files for the home screen is stores in the Home folder.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The CSS files is stores in own folder, called CSS. 
 
+The hoc folder, har PrivateRoute and PublicRoute components for the router.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### TODO
-Tirsdag:
-Readme
-Comments
-Refacrtor
+All images and icons are stored in the folder public/resources.

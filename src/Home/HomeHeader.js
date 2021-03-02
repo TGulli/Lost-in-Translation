@@ -1,4 +1,7 @@
-function StartHeader() {
+
+/*
+ * Header for the home page. This header is bigger than the other, and is not showing the profile name*/
+function HomeHeader() {
     return (
         <header className="startHeader">
             <h4>Lost in Translation</h4>
@@ -11,5 +14,4 @@ function StartHeader() {
     );
 }
 
-export default StartHeader;
-
+export default HomeHeader

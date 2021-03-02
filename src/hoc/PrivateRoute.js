@@ -1,6 +1,8 @@
-import { Route, Redirect } from "react-router-dom";
-import { AppRoutes } from "../consts/AppRoutes";
+import { Route, Redirect } from "react-router-dom"
+import { AppRoutes } from "../consts/AppRoutes"
 
+/*
+* If name is not set, the user must log in before visiting the current site*/
 export const PrivateRoute = (props) => {
 
     const session = localStorage.getItem('name')
