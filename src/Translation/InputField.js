@@ -1,5 +1,4 @@
 import {useState} from "react";
-import TranslationToSigns from "./TranslationToSigns";
 
 function InputField({sendDataToParent}) {
     const [translateString, setTranslateString] = useState('');

@@ -1,0 +1,26 @@
+.signBox{
+    margin-top: 5%;
+    width: 90%;
+    margin-left: 5%;
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    border-radius: 0.2em;
+    border-bottom: 15px solid rebeccapurple;
+    -moz-box-shadow: 0 0 5px grey;
+    -webkit-box-shadow: 0 0 5px grey;
+    box-shadow: 0 0 5px grey;
+}
+
+ul li{
+    font-size: 5em;
+    float: left;
+    width: 1em;
+    height: 1em;
+    list-style-type: none;
+}
+
+.signImage{
+    width: 1em;
+    display: block;
+}

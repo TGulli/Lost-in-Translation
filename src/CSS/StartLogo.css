@@ -1,0 +1,21 @@
+.startHeader{
+    height: 15em;
+    width: auto;
+    padding-top: 1em;
+    padding-left: 5em;
+
+}
+
+.underStart {
+    width: 10em;
+    position: absolute;
+    margin-top: 2em;
+}
+
+.overStart {
+    position: absolute;
+    width: 7em;
+    padding-left: 2em;
+    padding-top: 1em;
+    margin-top: 2em;
+}

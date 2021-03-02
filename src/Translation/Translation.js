@@ -3,10 +3,7 @@ import InputField from "./InputField";
 import {useState} from "react";
 import TranslationToSigns from "./TranslationToSigns";
 import {AppRoutes} from "../consts/AppRoutes";
-import './Translation.css';
-import Header from "../Header/Header";
-import "../Header/Header.css";
-
+import CustomHeader from "../CustomHeader/CustomHeader";
 
 function Translation() {
     const [string, setString] = useState('');
@@ -34,10 +31,9 @@ function Translation() {
 
     return (
         <div>
-            <Header toProfile={toProfile}/>
+            <CustomHeader toProfile={toProfile}/>
             <InputField sendDataToParent={callback}/>
-            {console.log(stringArr)}
-            <TranslationToSigns returnTranslateString={string}/>
+            <TranslationToSigns returnTranslateString={string} toProfile={toProfile} />
         </div>
     );
 }

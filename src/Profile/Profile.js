@@ -1,14 +1,14 @@
 import {useLocation} from "react-router";
 import ShowTranslations from "./ShowTranslations";
 import ResetLog from "./ResetLog";
-import './Profile.css';
+import CustomHeader from "../CustomHeader/CustomHeader";
 
 function Profile() {
 
     return (
         <div>
+            <CustomHeader />
             <ShowTranslations/>
-            <ResetLog/>
         </div>
     );
 }

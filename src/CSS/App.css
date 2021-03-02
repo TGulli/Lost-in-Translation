@@ -1,9 +1,10 @@
 .App {
 }
 
-
 main{
   background-color: white;
+  margin: auto;
+  padding-left: 20%;
 }
 
 header{

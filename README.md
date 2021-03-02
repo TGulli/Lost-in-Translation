@@ -23,12 +23,7 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### TODO
-Mandag:
-CSS/ Bootstrap
-Fikse at man kan gå direkte til en path, utenom knappene... (Ingen data blir da overført)
-
 Tirsdag:
 Readme
 Comments
 Refacrtor
-Heroku

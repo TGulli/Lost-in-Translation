@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {useHistory} from "react-router";
 import {AppRoutes} from "../consts/AppRoutes";
-import './Startup.css';
+import StartHeader from "./StartHeader";
 
 
 function Startup() {
@@ -10,23 +10,12 @@ function Startup() {
 
     const toTranslation = () => {
         localStorage.setItem('name', name)
-        history.push({
-            pathname: AppRoutes.Translation
-        })
+        history.push(AppRoutes.Translation)
     }
 
     return (
         <div>
-            <header>
-                <h4>Lost in Translation</h4>
-                <div className="logoPicture">
-                    <img src="/resources/Splash.svg" alt="Splash" className="under"/>
-                    <img src='/resources/Logo.png' alt="Logo" className="over"/>
-                </div>
-
-                <h1 className="padLeft">Lost in Translation</h1>
-                <h3 className="padLeft">Get started</h3>
-            </header>
+            <StartHeader />
             <main>
                 <div className="inputBox">
                     <div className="nameInput">

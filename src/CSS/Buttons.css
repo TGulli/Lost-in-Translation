@@ -1,0 +1,18 @@
+button {
+    border: none;
+    color: white;
+    margin-top: 2em;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.redButton{
+    background-color: #a90101;
+}
+
+.greenButton{
+    background-color: green;
+}

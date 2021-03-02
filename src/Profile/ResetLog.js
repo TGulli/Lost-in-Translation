@@ -14,7 +14,7 @@ function ResetLog() {
 
     return (
         <div>
-            <button type="button" onClick={reset} className="btn"> Logout </button>
+            <button type="button" onClick={reset} className="redButton"> Logout </button>
         </div>
     );
 }

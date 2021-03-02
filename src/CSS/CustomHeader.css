@@ -1,33 +1,30 @@
-.under {
+.CustomHeader{
+    margin-top: 0;
+    height: 5em;
+    background-color: #FFC75F;
+    width: auto;
+    padding-top: 1em;
+    padding-left: 5em;
+    padding-right: 7em;
+    color: white;
+    text-align:left;
+}
+
+.headUnderLogo {
     width: 2em;
     position: absolute;
 
 }
 
-.over {
+.headOverLogo {
     position: absolute;
     width: 1.5em;
     padding-left: 0.3em;
     padding-top: 0.2em;
 }
 
-header{
-    margin-top: 0;
-    height: 5em;
-}
-
 h3{
     padding-left: 3em;
-    text-align:left;
-}
-
-.right{
-    float:right;
-    padding-right: 5em;
-}
-
-.left{
-    float:left;
 }
 
 .userImage{

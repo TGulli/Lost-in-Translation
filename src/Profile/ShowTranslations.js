@@ -1,9 +1,11 @@
+import ResetLog from "./ResetLog";
+
 function ShowTranslations() {
     const stringArr = JSON.parse(localStorage.getItem('stringArr'))
 
     const getList = () => {
         let arr = []
-        if (stringArr === undefined){
+        if (stringArr === null || stringArr === undefined){
             return arr
         }
         for (let i = 0; i < stringArr.length; i++) {
@@ -15,7 +17,7 @@ function ShowTranslations() {
     }
 
     return (
-        <div>
+        <div className="signBox">
             <table>
                 <tbody>
                     <tr>
@@ -24,6 +26,7 @@ function ShowTranslations() {
                     {getList()}
                 </tbody>
             </table>
+            <ResetLog/>
         </div>
     );
 }

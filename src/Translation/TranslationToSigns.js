@@ -1,4 +1,4 @@
-function TranslationToSigns({returnTranslateString}) {
+function TranslationToSigns({returnTranslateString, toProfile}) {
     const translateSigns = () => {
         let arr = []
         const baseSrc = '/resources/individial_signs/'
@@ -22,6 +22,7 @@ function TranslationToSigns({returnTranslateString}) {
             <ul>
                 {translateSigns()}
             </ul>
+            <button type="button" onClick={toProfile} className="greenButton"> Profile </button>
         </div>
     );
 }
