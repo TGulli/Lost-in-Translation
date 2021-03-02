@@ -1,0 +1,68 @@
+.inputTranslate{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2em;
+    background-color: #FFC75F;
+}
+
+.nameInput{
+    border: 1px solid grey;
+    border-radius: 2em;
+    background-color: #EFEFEF;
+}
+
+input{
+    background-color: #EFEFEF;
+    height: 2em;
+    margin: 1em;
+    position: relative;
+    width: 85%;
+}
+
+.keyBoardIcon{
+    padding-left: 0.5em;
+    margin-top: 0.5em;
+    width: 2em;
+    padding-right: 1em;
+    border-right: 20px black;
+}
+
+.loginButton{
+    margin-top: 1em;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 2em;
+    height: 2em;
+}
+
+.signBox{
+    font-size: 5em;
+    width: 90%;
+    margin-left: 5%;
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    border-radius: 0.2em;
+    border-bottom: 0.2em solid rebeccapurple;
+    -moz-box-shadow: 0 0 5px grey;
+    -webkit-box-shadow: 0 0 5px grey;
+    box-shadow: 0 0 5px grey;
+}
+
+li{
+
+}
+
+ul li{
+    float: left;
+    width: 1em;
+    height: 1em;
+    list-style-type: none;
+}
+
+.signImage{
+    width: 1em;
+    display: block;
+
+}

@@ -1,23 +1,23 @@
 import {useState} from "react";
 import TranslationToSigns from "./TranslationToSigns";
 
-function Name() {
+function InputField({sendDataToParent}) {
     const [translateString, setTranslateString] = useState('');
-    const [returnTranslateString, setReturnTranslateString] = useState('');
-    const [toTranslation, setToTranslation] = useState(false);
 
     const translate = () => {
-        setReturnTranslateString(translateString)
-        setToTranslation(true)
+        sendDataToParent(translateString)
     }
 
     return (
-        <div>
-            Translate: <input type="text" id="translateString" name="translateString" onChange={e => setTranslateString(e.target.value)}/>
-            <button type="button" onClick={translate} className="btn">Set</button>
-            { toTranslation && (<TranslationToSigns returnTranslateString={returnTranslateString}/>) }
+        <div className="inputTranslate">
+            <div className="nameInput">
+                <img src="/resources/keyboard.svg" alt=" " className="keyBoardIcon"/>
+                <input type="txt" id="translateString" name="translateString" placeholder="Enter text to translate here." onChange={e => setTranslateString(e.target.value)}/>
+                <input type="image" className="loginButton" src="/resources/next-button.svg"  alt="Login" onClick={translate} />
+            </div>
         </div>
+
     );
 }
 
-export default Name;
+export default InputField;

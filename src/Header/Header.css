@@ -1,0 +1,37 @@
+.under {
+    width: 2em;
+    position: absolute;
+
+}
+
+.over {
+    position: absolute;
+    width: 1.5em;
+    padding-left: 0.3em;
+    padding-top: 0.2em;
+}
+
+header{
+    margin-top: 0;
+    height: 5em;
+}
+
+h3{
+    padding-left: 3em;
+    text-align:left;
+}
+
+.right{
+    float:right;
+    padding-right: 5em;
+}
+
+.left{
+    float:left;
+}
+
+.userImage{
+    position: absolute;
+    width: 1em;
+    padding-left: 1em;
+}
