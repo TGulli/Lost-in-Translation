@@ -5,10 +5,10 @@ import {
 } from "react-router-dom"
 
 import './CSS/App.css'
-import './CSS/StartLogo.css'
+import './CSS/HomeLogo.css'
 import './CSS/MidBox.css'
 import './CSS/Input.css'
-import './CSS/StartHeader.css'
+import './CSS/HomeHeader.css'
 import './CSS/Sign.css'
 import './CSS/CustomHeader.css'
 import './CSS/Buttons.css'
