@@ -1,7 +1,14 @@
+import {AppRoutes} from "../consts/AppRoutes";
+import {useHistory} from "react-router";
 
-function CustomHeader({userName, toProfile}) {
+
+function CustomHeader() {
+    const history = useHistory()
     const name = localStorage.getItem('name')
 
+    const toProfile = () => {
+        history.push(AppRoutes.Profile)
+    }
 
     return (
         <div className="CustomHeader">
@@ -10,7 +17,10 @@ function CustomHeader({userName, toProfile}) {
                 <img src='/resources/Logo.png' alt="Logo" className="headOverLogo"/>
             </div>
             <h3>
-                <span style={{float:"left"}}>Lost in translation</span><span style={{float:"right"}}>{name} <img className='userImage' src="/resources/user.svg" alt=' ' onClick={toProfile}/></span>
+                <span style={{float:"left"}}>Lost in translation</span>
+                <span style={{float:"right"}}>{name}
+                    <img className='userImage' src="/resources/user.svg" alt=' ' onClick={toProfile}/>
+                </span>
             </h3>
         </div>
     );

@@ -1,4 +1,4 @@
-import {useLocation, useHistory} from "react-router";
+import {useHistory} from "react-router";
 import InputField from "./InputField";
 import {useState} from "react";
 import TranslationToSigns from "./TranslationToSigns";
@@ -7,16 +7,18 @@ import CustomHeader from "../CustomHeader/CustomHeader";
 
 function Translation() {
     const [string, setString] = useState('');
-    const [stringArr, setStringArr] = useState([]);
+    let stringArr = []
     const history = useHistory();
 
     const toProfile = () => {
-        history.push({
-            pathname: AppRoutes.Profile
-        })
+        history.push(AppRoutes.Profile)
     }
 
     const callback = (string) => {
+        stringArr = JSON.parse(localStorage.getItem('stringArr'))
+        if (stringArr === null){
+            stringArr = []
+        }
         setString(string);
         if (stringArr.length < 10){
             stringArr.push(string)
@@ -33,7 +35,7 @@ function Translation() {
         <div>
             <CustomHeader toProfile={toProfile}/>
             <InputField sendDataToParent={callback}/>
-            <TranslationToSigns returnTranslateString={string} toProfile={toProfile} />
+            <TranslationToSigns returnTranslateString={string} />
         </div>
     );
 }

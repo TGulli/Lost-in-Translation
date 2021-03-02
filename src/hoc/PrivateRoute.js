@@ -5,11 +5,9 @@ export const PrivateRoute = (props) => {
 
     const session = localStorage.getItem('name')
 
-
     if (session === null) {
         return <Redirect to={ AppRoutes.Startup }  />
     }
-
     return <Route {...props} />
 }
 

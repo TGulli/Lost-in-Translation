@@ -1,4 +1,13 @@
-function TranslationToSigns({returnTranslateString, toProfile}) {
+import {AppRoutes} from "../consts/AppRoutes";
+import {useHistory} from "react-router";
+
+function TranslationToSigns({returnTranslateString}) {
+    const history = useHistory();
+
+    const toProfile = () => {
+        history.push(AppRoutes.Profile)
+    }
+
     const translateSigns = () => {
         let arr = []
         const baseSrc = '/resources/individial_signs/'

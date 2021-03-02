@@ -10,7 +10,7 @@ function ShowTranslations() {
         }
         for (let i = 0; i < stringArr.length; i++) {
             arr.push(<tr key={i}>
-                <th>{stringArr[i]}</th>
+                <td>{stringArr[i]}</td>
             </tr>)
         }
         return arr

@@ -1,4 +1,3 @@
-import CustomHeader from "../CustomHeader/CustomHeader";
 
 function NotFound() {
     return (
@@ -14,7 +13,6 @@ function NotFound() {
             </div>
         <h2 style={{textAlign: "center"}}>Not valid path.</h2>
         </div>
-
 );
 }
 
